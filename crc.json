@@ -1,0 +1,142 @@
+[
+  {
+    "name": "ImpresorTableroJugadas",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Retornar una representación del tablero de jugadas en forma de string"
+    ],
+    "collaborators": [
+      "TableroJugadas"
+    ]
+  },
+  {
+    "name": "ImpresorTableroPosición",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Retornar una representación del tablero de posiciones en forma de string"
+    ],
+    "collaborators": [
+      "TableroPosición"
+    ]
+  },
+  {
+    "name": "TableroJugadas",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Registrar las jugadas hechas por los jugadores"
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "TableroPosición",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Registrar la posición  y el estado de los barcos ubicados por el jugador"
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "Jugador",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Posiciona o ataca barcos"
+    ],
+    "collaborators": [
+      "TableroJugadas",
+      "TableroPosicion"
+    ]
+  },
+  {
+    "name": "JuegoNormal",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Ejecutar el bucle de juego normal",
+      ""
+    ],
+    "collaborators": [
+      "Jugadores",
+      ""
+    ]
+  },
+  {
+    "name": "Interfaz",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Muestra lo que pasa en el juego al jugador",
+      "Permite al jugador interactuar con el juego"
+    ],
+    "collaborators": [
+      "Juego"
+    ]
+  },
+  {
+    "name": "Bot",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Posiciona y ataca barcos",
+      ""
+    ],
+    "collaborators": [
+      "TableroJugadas",
+      "TableroPosicion"
+    ]
+  },
+  {
+    "name": "Historial",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Almacenar el historial de partidas de los jugadores"
+    ],
+    "collaborators": [
+      "Juego",
+      ""
+    ]
+  },
+  {
+    "name": "Radar",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Darle funcionalidad a la habilidad radar"
+    ],
+    "collaborators": [
+      "TableroPosiciones",
+      "Juego"
+    ]
+  },
+  {
+    "name": "JuegoDinamico",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Ejecutar el bucle de juego dinamico"
+    ],
+    "collaborators": [
+      "Jugador"
+    ]
+  }
+]
